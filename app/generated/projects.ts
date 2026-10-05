@@ -30,7 +30,7 @@ export const projects: Project[] = [
     "cover": "projects/kinkali/cover.jpg",
     "preview": null,
     "gallery": [],
-    "website": "https://kinkali.ru/",
+    "website": "https://kinkali-ten.vercel.app/",
     "color": "#FF1838"
   },
   {
