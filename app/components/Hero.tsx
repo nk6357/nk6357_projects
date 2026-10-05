@@ -6,7 +6,6 @@ export function Hero() {
       <div className="hero__grid" aria-hidden="true" />
       <div className="hero__meta hero__meta--top">
         <span>PORTFOLIO / 2026</span>
-        <span>56.8389° N — 60.6057° E</span>
       </div>
 
       <div className="hero__copy">
