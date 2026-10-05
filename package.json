@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync-content": "node scripts/sync-content.mjs",
+    "sync-content": "node scripts/sync-projects.mjs",
     "dev": "npm run sync-content && vite",
     "build": "npm run sync-content && tsc --noEmit && vite build",
     "preview": "vite preview",

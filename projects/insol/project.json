@@ -1,0 +1,15 @@
+{
+  "title": "Сайт для AI-компании INSOL",
+  "slug": "insol",
+  "description": "Цифровая презентация AI-компании и её технологических решений.",
+  "longDescription": "Сайт представляет направление работы INSOL и помогает быстро перейти от знакомства с продуктом к его изучению. Проект опубликован и доступен по внешней ссылке.",
+  "year": "2026",
+  "order": 1,
+  "featured": true,
+  "status": "Запущен",
+  "categories": ["AI", "Web"],
+  "technologies": [],
+  "cover": "cover.svg",
+  "website": "https://insol-dvlp.ru",
+  "color": "#FF1838"
+}

@@ -1,0 +1,28 @@
+:root {
+  color-scheme: light;
+  --red: #ff1838;
+  --red-deep: #b8001f;
+  --ink: #090909;
+  --graphite: #151515;
+  --paper: #f5f3ee;
+  --white: #ffffff;
+  --muted: #77736d;
+  --line: rgba(9, 9, 9, 0.19);
+  --line-dark: rgba(255, 255, 255, 0.2);
+  --font-display: "Lemon Milk", Impact, "Arial Narrow", sans-serif;
+  --font-body: Inter, "Helvetica Neue", Arial, sans-serif;
+  --page-padding: clamp(1rem, 3.3vw, 4rem);
+  --section-space: clamp(6.5rem, 11vw, 12rem);
+  --header-height: 4.75rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --page-padding: clamp(1rem, 5vw, 1.5rem);
+    --section-space: clamp(5rem, 24vw, 8rem);
+    --header-height: 4rem;
+  }
+}
+

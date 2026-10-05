@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nk6357.github.io/nk6357_projects/sitemap.xml
