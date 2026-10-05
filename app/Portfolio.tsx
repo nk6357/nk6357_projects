@@ -68,7 +68,6 @@ export function Portfolio() {
 
   return (
     <>
-      <style>{`@font-face{font-family:"Lemon Milk";src:url("${import.meta.env.BASE_URL}LEMONMILK-RegularItalic.otf") format("opentype");font-display:swap;font-style:italic;font-weight:400}`}</style>
       <a className="skip-link" href="#main-content">Перейти к содержимому</a>
       <ScrollProgress />
       <CustomCursor />
