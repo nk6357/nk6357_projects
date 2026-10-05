@@ -5,7 +5,7 @@ const root = process.cwd();
 const projectsDir = resolve(root, "projects");
 const outputDir = resolve(root, "public", "projects");
 const generatedFile = resolve(root, "app", "generated", "projects.ts");
-const requiredFields = ["title", "slug", "description", "year", "order", "categories", "cover"];
+const requiredFields = ["title", "slug", "description", "order", "cover"];
 const allowedImageExtensions = new Set([".webp", ".avif", ".png", ".jpg", ".jpeg", ".svg"]);
 
 async function exists(path) {
@@ -129,10 +129,7 @@ for (const folder of folders) {
     continue;
   }
   const categories = stringList(source.categories);
-  if (!categories.length) {
-    warn(folder.name, "categories должен содержать хотя бы одну категорию — проект пропущен");
-    continue;
-  }
+  const year = source.year === undefined || source.year === null ? undefined : optionalString(String(source.year));
 
   slugs.add(source.slug);
   const cover = await copyAsset(folderPath, folder.name, source.slug, source.cover, "cover");
@@ -151,7 +148,7 @@ for (const folder of folders) {
     slug: source.slug,
     description: source.description.trim(),
     ...(optionalString(source.longDescription) ? { longDescription: source.longDescription.trim() } : {}),
-    year: String(source.year).trim(),
+    ...(year ? { year } : {}),
     order: source.order,
     featured: source.featured === true,
     hidden: source.hidden === true,

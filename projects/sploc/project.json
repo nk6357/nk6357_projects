@@ -1,0 +1,8 @@
+{
+  "title": "СПЛОЦ",
+  "slug": "sploc",
+  "description": "Система поиска лучших оптовых цен на упаковочные материалы",
+  "order": 3,
+  "cover": "cover.jpg",
+  "website": "https://sploc.vercel.app"
+}

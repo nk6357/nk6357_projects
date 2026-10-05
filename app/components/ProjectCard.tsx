@@ -41,9 +41,7 @@ export function ProjectCard({ project, index, onOpen }: Props) {
         <span className="project-card__view" aria-hidden="true">Смотреть</span>
       </div>
       <div className="project-card__body">
-        <div className="project-card__topline">
-          <span>{project.year}</span>
-        </div>
+        {project.year && <div className="project-card__topline"><span>{project.year}</span></div>}
         <h3>{project.title}</h3>
         <p>{project.description}</p>
       </div>

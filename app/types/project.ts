@@ -3,7 +3,7 @@ export interface Project {
   slug: string;
   description: string;
   longDescription?: string;
-  year: string;
+  year?: string;
   order: number;
   featured: boolean;
   hidden: boolean;
@@ -17,4 +17,3 @@ export interface Project {
   github?: string;
   color: string;
 }
-

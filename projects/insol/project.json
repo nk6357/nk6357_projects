@@ -1,0 +1,8 @@
+{
+  "title": "INSOL",
+  "slug": "insol",
+  "description": "Сайт для платформы оценки и подбора AI-разработчиков",
+  "order": 1,
+  "cover": "cover.jpg",
+  "website": "https://insol-dvlp.ru"
+}

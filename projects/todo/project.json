@@ -1,0 +1,8 @@
+{
+  "title": "ЕГЭ",
+  "slug": "todo",
+  "description": "Веб-приложение для подготовки к ЕГЭ",
+  "order": 4,
+  "cover": "cover.jpg",
+  "website": "https://nk6357.github.io/todo"
+}
