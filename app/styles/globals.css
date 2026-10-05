@@ -1080,7 +1080,7 @@ img {
   font-size: clamp(3.1rem, 9.2vw, 11rem);
   font-style: italic;
   font-weight: 400;
-  line-height: 0.78;
+  line-height: 0.96;
   letter-spacing: -0.065em;
   text-transform: uppercase;
 }
@@ -2097,7 +2097,7 @@ img {
 
   .contact-section h2 {
     font-size: clamp(2.7rem, 14.5vw, 4.7rem);
-    line-height: 0.84;
+    line-height: 0.96;
   }
 
   .contact-section__orb {
