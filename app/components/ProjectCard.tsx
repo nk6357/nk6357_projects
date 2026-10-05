@@ -39,7 +39,6 @@ export function ProjectCard({ project, index, onOpen }: Props) {
       <div className="project-card__visual">
         <ProjectMedia src={project.cover} alt={`Обложка проекта «${project.title}»`} title={project.title} color={project.color} eager={index === 0} />
         <span className="project-card__view" aria-hidden="true">Смотреть</span>
-        {project.featured && <span className="project-card__featured">Избранный проект</span>}
       </div>
       <div className="project-card__body">
         <div className="project-card__topline">
@@ -47,9 +46,6 @@ export function ProjectCard({ project, index, onOpen }: Props) {
         </div>
         <h3>{project.title}</h3>
         <p>{project.description}</p>
-        <div className="project-card__categories" aria-label="Категории">
-          {project.categories.map((category) => <span key={category}>{category}</span>)}
-        </div>
       </div>
     </article>
   );
