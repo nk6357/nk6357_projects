@@ -24,18 +24,14 @@ export function Hero() {
         </p>
         <p className="hero__disciplines">Full-stack <i>×</i> AI <i>×</i> Product <i>×</i> Design</p>
         <div className="hero__actions">
-          <ButtonLink href="#projects">Смотреть проекты <span aria-hidden="true">↘</span></ButtonLink>
+          <ButtonLink href="#projects">Смотреть проекты</ButtonLink>
           <ButtonLink href="#contact" variant="outline">Связаться</ButtonLink>
         </div>
       </div>
 
-      <div className="hero__version" aria-hidden="true">
-        <span>INDEX</span><strong>01</strong><small>V.2.0</small>
-      </div>
       <a className="hero__scroll" href="#projects" aria-label="Прокрутить к проектам">
-        <span>Scroll to explore</span><i aria-hidden="true">↓</i>
+        <span>Scroll to explore</span>
       </a>
     </section>
   );
 }
-

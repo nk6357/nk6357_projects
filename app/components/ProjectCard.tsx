@@ -38,12 +38,11 @@ export function ProjectCard({ project, index, onOpen }: Props) {
       <button className="project-card__hit" type="button" onClick={(event) => onOpen(project, event.currentTarget)} aria-label={`Открыть проект «${project.title}»`} />
       <div className="project-card__visual">
         <ProjectMedia src={project.cover} alt={`Обложка проекта «${project.title}»`} title={project.title} color={project.color} eager={index === 0} />
-        <span className="project-card__view" aria-hidden="true">Смотреть ↗</span>
+        <span className="project-card__view" aria-hidden="true">Смотреть</span>
         {project.featured && <span className="project-card__featured">Избранный проект</span>}
       </div>
       <div className="project-card__body">
         <div className="project-card__topline">
-          <span className="project-card__number">{String(index + 1).padStart(2, "0")}</span>
           <span>{project.year}</span>
         </div>
         <h3>{project.title}</h3>
@@ -55,4 +54,3 @@ export function ProjectCard({ project, index, onOpen }: Props) {
     </article>
   );
 }
-

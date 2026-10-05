@@ -31,17 +31,12 @@
 
 .hero__eyebrow,
 .hero__meta,
-.hero__bottom,
-.hero__version {
+.hero__bottom {
   animation: fade-in 0.85s 0.45s var(--ease-out) both;
 }
 
 .hero__bottom {
   animation-delay: 0.62s;
-}
-
-.hero__version {
-  animation-delay: 0.75s;
 }
 
 [data-reveal] {
@@ -63,6 +58,12 @@
 
 .project-detail {
   animation: dialog-in 0.55s var(--ease-out) both;
+}
+
+@media (max-width: 800px) {
+  .project-detail {
+    animation: none;
+  }
 }
 
 .legal-panel,

@@ -4,7 +4,7 @@ export function About() {
       <div className="section-shell">
         <header className="section-header section-header--light" data-reveal>
           <div>
-            <p className="section-kicker"><span>02</span> About</p>
+            <p className="section-kicker">About</p>
             <h2 id="about-title">Обо мне</h2>
           </div>
           <p className="section-intro">На стыке инженерии, продукта и визуального языка.</p>

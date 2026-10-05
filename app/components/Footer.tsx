@@ -7,10 +7,6 @@ interface Props {
 export function Footer({ onLegalOpen }: Props) {
   return (
     <footer className="footer">
-      <div className="footer__top">
-        <a className="footer__brand" href="#top">nk6357<span>®</span></a>
-        <a className="back-to-top" href="#top">Наверх <span aria-hidden="true">↑</span></a>
-      </div>
       <div className="footer__bottom">
         <p>© {new Date().getFullYear()} nk6357. Все права защищены.</p>
         <div className="footer__socials">
@@ -26,4 +22,3 @@ export function Footer({ onLegalOpen }: Props) {
     </footer>
   );
 }
-

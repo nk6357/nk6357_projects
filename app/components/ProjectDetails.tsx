@@ -28,18 +28,13 @@ export function ProjectDetails({ project, nextProject, onClose, onNext, returnFo
       >
         <header className="project-detail__bar">
           <a href="#top" className="logo" tabIndex={-1} aria-hidden="true"><span>nk</span>6357</a>
-          <span>Project file / {project.year}</span>
+          <span>Project file</span>
           <button className="project-detail__close" type="button" onClick={onClose} data-autofocus>
             Закрыть <span aria-hidden="true">×</span>
           </button>
         </header>
 
         <div className="project-detail__hero">
-          <div className="project-detail__meta">
-            <span>{project.year}</span>
-            {project.status && <span>{project.status}</span>}
-            <span>{project.categories.join(" / ")}</span>
-          </div>
           <h2 id="project-detail-title">{project.title}</h2>
           <p>{project.description}</p>
         </div>
@@ -58,8 +53,8 @@ export function ProjectDetails({ project, nextProject, onClose, onNext, returnFo
             )}
             {(project.website || project.github) && (
               <div className="project-detail__actions">
-                {project.website && <ButtonLink href={project.website} target="_blank" rel="noreferrer noopener">Открыть проект ↗</ButtonLink>}
-                {project.github && <ButtonLink href={project.github} target="_blank" rel="noreferrer noopener" variant="outline">Исходный код ↗</ButtonLink>}
+                {project.website && <ButtonLink href={project.website} target="_blank" rel="noreferrer noopener">Открыть проект</ButtonLink>}
+                {project.github && <ButtonLink href={project.github} target="_blank" rel="noreferrer noopener" variant="outline">Исходный код</ButtonLink>}
               </div>
             )}
           </div>
@@ -77,11 +72,9 @@ export function ProjectDetails({ project, nextProject, onClose, onNext, returnFo
           <button className="next-project" type="button" onClick={() => onNext(nextProject)}>
             <span>Следующий проект</span>
             <strong>{nextProject.title}</strong>
-            <i aria-hidden="true">→</i>
           </button>
         )}
       </article>
     </div>
   );
 }
-

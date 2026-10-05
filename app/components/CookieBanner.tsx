@@ -13,7 +13,6 @@ export function CookieBanner({ onPolicyOpen }: { onPolicyOpen: (trigger: HTMLBut
 
   return (
     <aside className="cookie-banner" aria-label="Настройки cookies">
-      <span className="cookie-banner__index" aria-hidden="true">C / 01</span>
       <p>Сайт не использует аналитику и необязательные cookies. Мы сохраняем только ваш выбор локально в браузере.</p>
       <button className="cookie-banner__policy" type="button" onClick={(event) => onPolicyOpen(event.currentTarget)}>Подробнее</button>
       <div className="cookie-banner__actions">

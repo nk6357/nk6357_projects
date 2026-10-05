@@ -76,10 +76,9 @@ export function Header() {
       </header>
 
       <nav className="mobile-nav" id="mobile-menu" data-open={menuOpen} aria-label="Мобильная навигация" aria-hidden={!menuOpen}>
-        <span className="mobile-nav__index">NAV / 03</span>
-        {links.map((link, index) => (
+        {links.map((link) => (
           <a key={link.id} href={link.href} tabIndex={menuOpen ? 0 : -1} onClick={() => setMenuOpen(false)}>
-            <span>0{index + 1}</span>{link.label}
+            {link.label}
           </a>
         ))}
         <div className="mobile-nav__footer">Full-stack · AI · Product · Design</div>
