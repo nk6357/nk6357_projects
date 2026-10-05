@@ -14,7 +14,7 @@ export function ProjectsGrid({ projects, onOpen }: Props) {
           <p className="section-kicker">Selected work</p>
           <h2 id="projects-title">Проекты</h2>
         </div>
-        <p className="section-intro">Продукты, интерфейсы и системы — спроектированные и собранные как единое целое.</p>
+        <p className="section-intro">IT-продукты, собранные мной с самого начала до финального результата.</p>
       </header>
 
       {projects.length > 0 ? (
