@@ -1,10 +1,3 @@
-const facts = [
-  ["01", "Full-cycle development"],
-  ["02", "Web / AI / Automation"],
-  ["03", "Idea → Design → Production"],
-  ["04", "Remote / Worldwide"],
-];
-
 export function About() {
   return (
     <section className="about" id="about" aria-labelledby="about-title">
@@ -22,15 +15,7 @@ export function About() {
           <p>Работаю с продуктом целиком — от идеи и структуры до запуска.</p>
         </div>
 
-        <div className="about__facts">
-          {facts.map(([number, label]) => (
-            <div key={number} className="about__fact" data-reveal>
-              <span>{number}</span><p>{label}</p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
 }
-

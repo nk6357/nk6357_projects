@@ -44,36 +44,38 @@ export function Header() {
   }, [menuOpen]);
 
   return (
-    <header className="header" data-scrolled={scrolled} data-menu-open={menuOpen}>
-      <a className="logo" href="#top" aria-label="nk6357 — наверх" onClick={() => setMenuOpen(false)}>
-        <span>nk</span>6357
-      </a>
+    <>
+      <header className="header" data-scrolled={scrolled} data-menu-open={menuOpen}>
+        <a className="logo" href="#top" aria-label="nk6357 — наверх" onClick={() => setMenuOpen(false)}>
+          <span>nk</span>6357
+        </a>
 
-      <nav className="desktop-nav" aria-label="Основная навигация">
-        {links.map((link) => (
-          <a key={link.id} href={link.href} aria-current={active === link.id ? "location" : undefined}>
-            {link.label}
-          </a>
-        ))}
-      </nav>
+        <nav className="desktop-nav" aria-label="Основная навигация">
+          {links.map((link) => (
+            <a key={link.id} href={link.href} aria-current={active === link.id ? "location" : undefined}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
 
-      <div className="availability" aria-label="Доступен для новых проектов">
-        <span className="availability__dot" aria-hidden="true" />
-        <span>Доступен к работе</span>
-      </div>
+        <div className="availability" aria-label="Доступен для новых проектов">
+          <span className="availability__dot" aria-hidden="true" />
+          <span>Доступен к работе</span>
+        </div>
 
-      <button
-        className="menu-button"
-        type="button"
-        aria-label={menuOpen ? "Закрыть меню" : "Открыть меню"}
-        aria-expanded={menuOpen}
-        aria-controls="mobile-menu"
-        onClick={() => setMenuOpen((value) => !value)}
-      >
-        <span aria-hidden="true" /><span aria-hidden="true" />
-      </button>
+        <button
+          className="menu-button"
+          type="button"
+          aria-label={menuOpen ? "Закрыть меню" : "Открыть меню"}
+          aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
+          onClick={() => setMenuOpen((value) => !value)}
+        >
+          <span aria-hidden="true" /><span aria-hidden="true" />
+        </button>
+      </header>
 
-      <nav className="mobile-nav" id="mobile-menu" aria-label="Мобильная навигация" aria-hidden={!menuOpen}>
+      <nav className="mobile-nav" id="mobile-menu" data-open={menuOpen} aria-label="Мобильная навигация" aria-hidden={!menuOpen}>
         <span className="mobile-nav__index">NAV / 03</span>
         {links.map((link, index) => (
           <a key={link.id} href={link.href} tabIndex={menuOpen ? 0 : -1} onClick={() => setMenuOpen(false)}>
@@ -82,6 +84,6 @@ export function Header() {
         ))}
         <div className="mobile-nav__footer">Full-stack · AI · Product · Design</div>
       </nav>
-    </header>
+    </>
   );
 }
